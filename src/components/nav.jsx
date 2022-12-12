@@ -21,10 +21,14 @@ const NavBar = () => {
                 </nav>
                 <div className="img-bg">
                     {/* <div className="btn-wrapper">
-                        <button className="book-demo-btn">Book Demo</button>
                     </div>
                     <img className="img2" src={img2} />
-                    <img className="img1 img-fluid" src={img1} /> */}
+                <img className="img1 img-fluid" src={img1} /> */}
+                    {/* <button></button> */}
+                    <div className="btn-wrapper">
+
+                <button className="book-demo-btn">Book Demo</button>
+                    </div>
                 </div>
 
             </div>
