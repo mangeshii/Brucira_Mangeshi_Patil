@@ -1,7 +1,8 @@
 import "./style.css"
 import { useState } from "react";
 import { BsArrowRightShort } from "react-icons/bs";
-import img7 from "../images/img7.png"
+import img7 from "../images/img7.png";
+import img8 from "../images/img8.png"
 
 const AccordionPage = () => {
     const [isActive, setIsActive] = useState(false);
@@ -21,6 +22,9 @@ const AccordionPage = () => {
                     </div>
                     <div className={isActive ? "accord-img show-img" : "accord-img"}>
                         <img src={img7} />
+                        {/* <div className="middle">
+                            <img className="vectorlogo" src={img8} />
+                        </div> */}
                     </div>
                 </div>
                 <div className={!isActive ? "item show-item" : "item"}>
@@ -35,6 +39,35 @@ const AccordionPage = () => {
                     </div>
                     <div className={!isActive ? "accord-img show-img" : "accord-img"}>
                         <img src={img7} />
+                        <div className="card-stack">
+                            <div className="crd1">
+                                <div className="vector-logo">
+                                    <img src={img8} />
+                                </div>
+                                <div className="crd1-content">
+                                    <h6>5+ customers are up for renewal this week/</h6>
+                                    <p>Engage now?</p>
+                                    <button>Send Proposal</button>
+                                </div>
+                            </div>
+                            <div className="crd1 crd2">
+                                <div className="vector-logo2">
+                                </div>
+                                <div className="crd2-content">
+                                    <h6></h6>
+                                    <p></p>
+                                    <button>Send Proposal</button>
+                                </div>
+                            </div>
+                            <div className="crd1 crd3">
+                                <div className="vector-logo3">
+                                </div>
+                                <div className="crd2-content">
+                                    <h6></h6>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
