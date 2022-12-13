@@ -1,5 +1,6 @@
 import "./style.css"
-import img5 from "../images/img4.png"
+import img5 from "../images/img4.png";
+import img6 from "../images/img6.png"
 
 const Fourth = () => {
     return (
@@ -17,7 +18,10 @@ const Fourth = () => {
                         </div>
                         <div class="col">
                             <div className="footer-img">
-                               <img src={img5}/>
+                                <img src={img5} />
+                                <div className="circle">
+                                    <img src={img6} />
+                                </div>
                             </div>
                         </div>
                     </div>

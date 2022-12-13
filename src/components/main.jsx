@@ -12,7 +12,7 @@ const Main = () => {
                 <button className="help-btn">See how Vymo can help</button>
                 </div>
                 <div className="img-cont">
-                <img className="img1" src={img1} />
+                <img className="img1 img-fluid" src={img1} />
                 <img className="img2" src={img2} />
 
                 </div>
