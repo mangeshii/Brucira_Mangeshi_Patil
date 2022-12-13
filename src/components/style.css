@@ -348,54 +348,42 @@ nav .wrapper {
     flex-direction: column;
     position: relative;
 }
-.item{
-    width:100%;
-    background-color: #505ECE;
-    color:white;
-    padding:20px;
-    padding:15px 50px 
-}
-.item.show{
-    width:100%;
-    background-color: #2C233D;
-    padding:50px
 
+ .item{
+    display: flex;
+    background-color: #505ECE;
+    color: white;
 }
-.content{
+.item.show-item{
+     background-color: #2C233D;
+
+ }
+ .accord-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+ }
+ .accord-img img{
+    background-color: #2C233D;
+    width:550px;
+    height:450px
+ }
+ .content{
     max-height: 0;
     overflow: hidden;
     width:100%;
-    display: flex;  
 }
-.content.showw{
+.content.show{
     height: auto;
     max-height: 9999px;
     width:100%;
     padding: 0%;
     margin: 0%;
 }
-.title h4{
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 42px;
-    letter-spacing: -1px;
+.accord-img{
+    display: none;
 }
-.cl h4{
-    border:2px solid blue
-}
-.cl p{
-font-size: 16px;
-font-weight: 500;
-line-height: 28px;
-letter-spacing: 0px;
-text-align: left;
-
-}
-.cl button{
-    padding: 7px 20px;
-    background-color: #2C233D;
-    border:1px solid white;
-    color: white;
-    height: 42px;
-    border-radius: 4px;
+.accord-img.show-img{
+    display: block;
 }
