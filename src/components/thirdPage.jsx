@@ -20,7 +20,7 @@ const ThirdPage = () => {
                         </div>
                     </div>
                     <div className={isActive ? "accord-img show-img" : "accord-img"}>
-                        <img src={img7} />
+                        <img src={img7} alt="img7" />
                     </div>
                 </div>
                 <div className={!isActive ? "item show-item" : "item"}>
@@ -34,11 +34,11 @@ const ThirdPage = () => {
                         </div>
                     </div>
                     <div className={!isActive ? "accord-img show-img" : "accord-img"}>
-                        <img src={img7} />
+                        <img src={img7} alt="img7"/>
                         <div className="card-stack">
                             <div className="crd1">
                                 <div className="vector-logo">
-                                    <img src={img8} />
+                                    <img src={img8} alt="img8"/>
                                 </div>
                                 <div className="crd1-content">
                                     <h6>5+ customers are up for renewal this week/</h6>
@@ -50,8 +50,8 @@ const ThirdPage = () => {
                                 <div className="vector-logo2">
                                 </div>
                                 <div className="crd2-content">
-                                    <h6></h6>
-                                    <p></p>
+                                    <h6> </h6>
+                                    <p> </p>
                                     <button>Send Proposal</button>
                                 </div>
                             </div>
@@ -59,8 +59,8 @@ const ThirdPage = () => {
                                 <div className="vector-logo3">
                                 </div>
                                 <div className="crd2-content">
-                                    <h6></h6>
-                                    <p></p>
+                                    <h6> </h6>
+                                    <p> </p>
                                 </div>
                             </div>
                         </div>

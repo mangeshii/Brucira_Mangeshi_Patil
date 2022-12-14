@@ -12,12 +12,12 @@ const FrontPage = () => {
                     <button className="help-btn">See how Vymo can help</button>
                 </div>
                 <div className="img-cont">
-                    <img className="img1 img-fluid" src={img1} />
-                    <img className="img2" src={img2} />
+                    <img className="img1 img-fluid" src={img1} alt="img1"/>
+                    <img className="img2" src={img2} alt="img2" />
                     <div className="small-cont">
                         <div className="main-column">
                             <div className="icn">
-                                <img src={img16} />
+                                <img src={img16} alt="img16"/>
                             </div>
                             <div className="column">
                                 <button>To drive sales productivity bottom up</button>

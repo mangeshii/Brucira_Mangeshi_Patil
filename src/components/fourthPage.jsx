@@ -17,7 +17,7 @@ const FourthPage = () => {
                 </div>
                 <div className="card2">
                     <div className="user-img">
-                        <img src={img3} />
+                        <img src={img3} alt="img3" />
                         <h6>Deepika Sharma</h6>
                         <p>Director, Gartner</p>
                     </div>
