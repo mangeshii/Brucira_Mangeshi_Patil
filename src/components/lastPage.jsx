@@ -1,8 +1,7 @@
-import "./style.css"
 import img5 from "../images/img4.png";
 import img6 from "../images/img6.png"
 
-const Fourth = () => {
+const LastPage = () => {
     return (
         <>
             <div className="fourthpage-wrapper">
@@ -30,4 +29,4 @@ const Fourth = () => {
         </>
     )
 }
-export default Fourth
+export default LastPage

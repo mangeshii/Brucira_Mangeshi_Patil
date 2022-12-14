@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+$buttoncolor: #505ECE;
+@mixin display-props {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin heading{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2px;
+}
+@mixin button{
+    padding: 7px 20px;
+    background-color: $buttoncolor;
+    border: none;
+    color: white;
+    height: 42px;
+    border-radius: 4px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -86,12 +106,7 @@ nav .wrapper {
 }
 
 .book-demo-btn {
-    padding: 7px 20px;
-    background-color: #505ECE;
-    border: none;
-    color: white;
-    height: 42px;
-    border-radius: 4px;
+    @include button;
 }
 
 .main-wrapper {
@@ -99,16 +114,12 @@ nav .wrapper {
     top: 88px;
     width: 100%;
     height: 560px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-props;
 }
 
 .header-content h1 {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 80px;
-    letter-spacing: -2px;
+    @include heading;
+    
 }
 
 .header-content p {
@@ -118,7 +129,7 @@ nav .wrapper {
 }
 
 .help-btn {
-    background-color: #505ECE;
+    background-color: $buttoncolor;
     width: 250px;
     border-radius: 4px;
     padding: 16px 24px 16px 24px;
@@ -146,7 +157,7 @@ nav .wrapper {
 }
 
 .wave-icon {
-    color: #505ECE
+    color: $buttoncolor
 }
 
 .trophy-icon {
@@ -158,20 +169,14 @@ nav .wrapper {
 }
 
 .third-page {
-    display: flex;
-    justify-content: center;
+    @include display-props;
     flex-direction: column;
-    align-items: center;
     height: 700px;
-    /* border:2px solid red */
 }
 
 .third-page h1 {
     padding-bottom: 40px;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: -2px;
+    @include heading;
     text-align: center;
 }
 
@@ -199,9 +204,7 @@ nav .wrapper {
 .gartner {
     height: 80px;
     width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-props;
     background-color: #307388;
     color: white;
     border-radius: 10px;
@@ -228,11 +231,7 @@ nav .wrapper {
 }
 
 .card1-content button {
-    background-color: #505ECE;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    padding: 10px 30px;
+    @include button;
 }
 
 .card2 {
@@ -240,9 +239,7 @@ nav .wrapper {
     position: absolute;
     top: 280px;
     z-index: -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-props;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -250,9 +247,7 @@ nav .wrapper {
 .user-img {
     width: 400px;
     padding: 20px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-props;
     flex-direction: column;
 }
 
@@ -303,12 +298,7 @@ nav .wrapper {
 }
 
 .footer-text button {
-    padding: 7px 20px;
-    background-color: #505ECE;
-    border: none;
-    color: white;
-    height: 42px;
-    border-radius: 4px;
+    @include button
 }
 
 .footer-img {
@@ -319,7 +309,7 @@ nav .wrapper {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background-color: #505ECE;
+    background-color: $buttoncolor;
     position: absolute;
     top: 10%;
     right: 40%
@@ -339,25 +329,20 @@ nav .wrapper {
 }
 
 .middle-page-container h3 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 64px;
-    letter-spacing: -2px;
+    @include heading;
     text-align: center;
     padding: 30px;
 }
 
 .accordion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-props;
     flex-direction: column;
     position: relative;
 }
 
 .item {
     display: flex;
-    background-color: #505ECE;
+    background-color: $buttoncolor;
     color: white;
 }
 
@@ -368,8 +353,8 @@ nav .wrapper {
 
 .accord-content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     padding: 20px 70px;
 }
 
@@ -411,17 +396,13 @@ nav .wrapper {
 
 .accord-img.show-img {
     display: block;
-    /* border:2px solid red; */
-    /* display: flex; */
 }
 
 .card-stack {
     position: absolute;
     top: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-props;
     flex-direction: column;
     overflow: hidden !important;
     padding: 30px;
@@ -443,21 +424,16 @@ nav .wrapper {
     background-color: #FF5A5F;
     margin-right: 20px;
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-props;
     border-radius: 5px;
 }
 
 .vector-logo img {
     width: 25px;
     height: 25px;
-    /* border:2px solid red; */
-    /* margin: auto; */
 }
 
 .crd1-content h6 {
-    /* font-family: Objectivity; */
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
@@ -467,7 +443,6 @@ nav .wrapper {
 }
 
 .crd1-content p {
-    /* font-family: Objectivity; */
     font-size: 12px;
     font-weight: 200;
     line-height: 16px;
@@ -537,9 +512,7 @@ nav .wrapper {
     height: 60px;
     width: 65px;
     background-color: #FF5A5F;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-props;
 }
 
 .vectorlogo {
@@ -557,10 +530,7 @@ nav .wrapper {
 }
 
 .fifth-page-wrapper h4 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: -2px;
+    @include heading;
     text-align: center;
     color: white;
     padding-top: 80px
@@ -577,10 +547,7 @@ nav .wrapper {
 }
 .cl {
     color: wheat;
-    /* border:2px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-props;
 }
 
 .cardd {
@@ -605,17 +572,12 @@ nav .wrapper {
     text-align: start;
 }
 .helpp-btn{
-    /* border:2px solid red; */
     width:100%;
     text-align: center;
     padding:20px
 }
 .helpp-btn button{
-    border: none;
-    padding:7px 20px;
-    color:white;
-    background-color: #505ECE;
-    border-radius: 7px;
+    @include button
 }
 .logo-img{
     height:50px;
@@ -623,18 +585,14 @@ nav .wrapper {
     background-color: #FF5A5F;
     margin: 5px;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-props;
 }
 .logo-img img{
     width:35px;
     height:35px
 }
 .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-props;
 
 }
 .small-cont{
@@ -644,7 +602,6 @@ nav .wrapper {
     font-size: 30px;
     z-index: 99;
     background-color: rgba(255, 255, 255, .15); 
-    /* background-color: #42AF8F; */
     position: absolute;
     top:400px;
     right:120px;
@@ -652,7 +609,6 @@ nav .wrapper {
 }
 
 .main-column{
-    /* border:2px solid white; */
     height:100%;
     display: flex;align-items: center;
     padding: 40px 20px;
@@ -666,9 +622,7 @@ nav .wrapper {
     width:80px;
     border-radius: 5px;
     margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-props;
 }
 .icn img{
     height:30px !important;
@@ -677,7 +631,7 @@ nav .wrapper {
 .column button{
     font-size: 13px;
     padding:5px;
-    background-color: #505ECE;
+    background-color: $buttoncolor;
     color:white;
     border:none;
     border-radius: 2px;

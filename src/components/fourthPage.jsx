@@ -1,7 +1,6 @@
 import img3 from "../images/img3.png"
-import img4 from "../images/img4.png"
 
-const ThirdPage = () => {
+const FourthPage = () => {
     return (
         <div className='container third-page'>
             <h1>Recognized for driving innovation in <br />Sales Engagement</h1>
@@ -34,4 +33,4 @@ const ThirdPage = () => {
 }
 
 
-export default ThirdPage
+export default FourthPage

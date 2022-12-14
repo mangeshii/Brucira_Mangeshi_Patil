@@ -1,9 +1,8 @@
-import "./style.css"
 import img1 from "../images/img1.png";
 import img2 from "../images/img2.png";
 import img16 from "../images/img16.png"
 
-const Main = () => {
+const FrontPage = () => {
     return (
         <>
             <div className="main-wrapper">
@@ -32,4 +31,4 @@ const Main = () => {
         </>
     )
 }
-export default Main
+export default FrontPage

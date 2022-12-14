@@ -1,10 +1,8 @@
-import "./style.css"
-import { BsTrophy } from "react-icons/bs"
 import {CiTrophy} from "react-icons/ci"
 import { CiDatabase } from "react-icons/ci"
 import { CiWavePulse1 } from "react-icons/ci"
 
-const Second = () => {
+const SecondPage = () => {
     return (
         <>
             <div class="container  second-page">
@@ -43,4 +41,4 @@ const Second = () => {
 
 
 
-export default Second
+export default SecondPage

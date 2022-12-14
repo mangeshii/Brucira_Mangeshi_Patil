@@ -1,23 +1,24 @@
 import NavBar from "./components/nav";
-import Main from "./components/main";
-import Second from "./components/second";
+import FrontPage from "./components/frontPage";
+import SecondPage from "./components/secondPage";
+import ThirdPage from "./components/thirdPage";
+import FourthPage from "./components/fourthPage";
+import FifthPage from "./components/fifthPage";
+import LastPage from "./components/lastPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ThirdPage from "./components/third";
-import Fourth from "./components/fourth";
-import AccordionPage from "./components/accordionpage";
-import FifthPage from "./components/fifth";
+import "./components/style.scss"
 
 function App() {
   return (
     <>
 
     <NavBar/>
-    <Main/>
-    <Second/>
-    <AccordionPage/>
+    <FrontPage/>
+    <SecondPage/>
     <ThirdPage/>
+    <FourthPage/>
     <FifthPage/>
-    <Fourth/>
+    <LastPage/>
     </>
   );
 }

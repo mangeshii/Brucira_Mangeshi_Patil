@@ -1,4 +1,3 @@
-import "./style.css"
 import { IoIosArrowDown } from "react-icons/io";
 import img8 from "../images/img8.png"
 
@@ -26,7 +25,6 @@ const NavBar = () => {
                 </nav>
                 <div className="img-bg">
                     <div className="btn-wrapper">
-
                         <button className="book-demo-btn">Book Demo</button>
                     </div>
                 </div>

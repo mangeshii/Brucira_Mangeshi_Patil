@@ -1,10 +1,9 @@
-import "./style.css"
 import { useState } from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import img7 from "../images/img7.png";
 import img8 from "../images/img8.png"
 
-const AccordionPage = () => {
+const ThirdPage = () => {
     const [isActive, setIsActive] = useState(false);
     return (
         <div className="middle-page-container container">
@@ -22,9 +21,6 @@ const AccordionPage = () => {
                     </div>
                     <div className={isActive ? "accord-img show-img" : "accord-img"}>
                         <img src={img7} />
-                        {/* <div className="middle">
-                            <img className="vectorlogo" src={img8} />
-                        </div> */}
                     </div>
                 </div>
                 <div className={!isActive ? "item show-item" : "item"}>
@@ -75,4 +71,4 @@ const AccordionPage = () => {
         </div>
     )
 }
-export default AccordionPage
+export default ThirdPage
