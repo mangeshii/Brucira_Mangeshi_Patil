@@ -6,7 +6,7 @@ import FourthPage from "./components/fourthPage";
 import FifthPage from "./components/fifthPage";
 import LastPage from "./components/lastPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./components/style.scss"
+import "./style/style.scss"
 
 function App() {
   return (
