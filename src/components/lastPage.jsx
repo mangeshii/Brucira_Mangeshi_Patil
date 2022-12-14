@@ -17,9 +17,9 @@ const LastPage = () => {
                         </div>
                         <div class="col">
                             <div className="footer-img">
-                                <img src={img5} />
+                                <img src={img5} alt="img5"/>
                                 <div className="circle">
-                                    <img src={img6} />
+                                    <img src={img6} alt="img6"/>
                                 </div>
                             </div>
                         </div>
